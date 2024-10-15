@@ -1,0 +1,86 @@
+*{
+    margin :2.5px;
+    padding :1px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image.png);
+    border-radius: 20px;
+    image-resolution:1920 x 1080;
+    background-position: center;
+    background-size: cover;
+    position: center; 
+}
+
+nav{
+    display: flex;
+    color: black;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position :relative;
+}
+
+.navlink ul li a{
+    color: white;
+    text-decoration: solid;
+    font-size: large;
+    font-weight: 200;
+    font-family:monospace;
+}
+
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background:rgb(251, 42, 0);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+
+.navlink ul li:hower::after{
+    width: 100%;
+
+}
+
+.text-box{
+    color: white;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+
+}
+
+.para{
+    font-size: 20px;
+}
